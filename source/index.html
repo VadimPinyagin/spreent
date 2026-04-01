@@ -18,7 +18,7 @@
       <div class="header__container container">
         <img class="header__logo logo" src="images/logo-spreent.svg" width="127" height="28" alt="Логотип онлайн-академии Spreent">
         <nav class="nav is-hidden">
-          <a href="#">Начать</a>
+          <a href="#" class="button">Начать</a>
           <button class="nav__toggle btn btn--burger" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
@@ -40,11 +40,45 @@
       <section class="hero">
         <div class="container hero__container">
           <h1 class="visually-hidden">Ценности онлайн-академии Spreent</h1>
-          <div class="hero__values">
-            <span class="hero__value-item hero__value-item--left">&ndash; Опыт, практика,</span>
-            <span class="hero__value-item hero__value-item--right">актуальные знания</span>
-          </div>
-          <p class="hero__text">Главные ценности, вокруг которых строится обучение в&nbsp;spreent</p>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" width="329" height="200" srcset="images/artur/artur-large-photo@1x.webp 1x, images/artur/artur-large-photo@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/artur/artur-large-photo@1x.jpg 1x, images/artur/artur-large-photo@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 480px)" width="221" height="135" srcset="images/artur/artur-large-photo@1x.webp 1x, images/artur/artur-large-photo@2x.webp 2x">
+                  <img class="hero__item-photo" src="images/artur/artur-large-photo@1x.jpg" srcset="images/artur/artur-large-photo@2x.jpg 2x" width="221" height="135" alt="Фото молодого человека по имени Артур с темными короткими волосами, который слегка улыбается и смотрит в камеру, приложив руку к затылку.">
+                </picture>
+                <p class="hero__item-name">Артур</p>
+            </li>
+            <li class="hero__item hero__item--content">
+              <div class="hero__values values">
+                <div class="values__content">
+                  <span class="values__text values__text--left">&ndash; Опыт, практика,</span>
+                  <span class="values__text values__text--right">актуальные знания</span>
+                </div>
+                <p class="hero__description">Главные ценности, вокруг которых строится обучение в&nbsp;Spreent</p>
+                <a href="#" class="button hero__button">Начать учиться</a>
+              </div>
+            </li>
+            <li class="hero__item">
+              <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" width="175" height="256" srcset="images/sergey/sergey-small-photo@1x.webp 1x, images/sergey/sergey-small-photo@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/sergey/sergey-small-photo@1x.jpg 1x, images/sergey/sergey-small-photo@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 480px)" width="117" height="171" srcset="images/sergey/sergey-small-photo@1x.webp 1x, images/sergey/sergey-small-photo@2x.webp 2x">
+                  <img class="hero__item-photo" src="images/sergey/sergey-small-photo@1x.jpg" srcset="images/sergey/sergey-small-photo@2x.jpg 2x" width="117" height="171" alt="Черно-белый портрет Сергея в худи и бейсболке на фоне водоема.">
+                </picture>
+                <p class="hero__item-name">Сергей</p>
+            </li>
+            <li class="hero__item">
+              <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" width="329" height="200" srcset="images/michael/michael-small-photo@1x.webp 1x, images/michael/michael-small-photo@2x.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/michael/michael-small-photo@1x.jpg 1x, images/michael/michael-small-photo@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 480px)" width="221" height="135" srcset="images/michael/michael-small-photo@1x.webp 1x, images/michael/michael-small-photo@2x.webp 2x">
+                  <img class="hero__item-photo" src="images/michael/michael-small-photo@1x.jpg" srcset="images/michael/michael-small-photo@2x.jpg 2x" width="221" height="135" alt="Фото Михаила на открытом воздухе на фоне кустов и деревьев в парке.">
+                </picture>
+                <p class="hero__item-name">Миша</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
