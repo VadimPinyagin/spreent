@@ -14,9 +14,39 @@
     <link rel="stylesheet" href="styles/styles.scss">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="header__container container">
+        <img class="header__logo logo" src="images/logo-spreent.svg" width="127" height="28" alt="Логотип онлайн-академии Spreent">
+        <nav class="nav is-hidden">
+          <a href="#">Начать</a>
+          <button class="nav__toggle btn btn--burger" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Об&nbsp;академии</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Курсы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Корпоративное обучение</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-      <h1>Страница для старта</h1>
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="visually-hidden">Ценности онлайн-академии Spreent</h1>
+          <div class="hero__values">
+            <span class="hero__value-item hero__value-item--left">&ndash; Опыт, практика,</span>
+            <span class="hero__value-item hero__value-item--right">актуальные знания</span>
+          </div>
+          <p class="hero__text">Главные ценности, вокруг которых строится обучение в&nbsp;spreent</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
