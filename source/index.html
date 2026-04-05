@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru" data-validate="html">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo logo">
+        <a class="header__logo logo" href="#" aria-current="page">
           <img class="header__logo-image" src="images/logo-spreent.svg" width="127" height="28" alt="Логотип онлайн-академии Spreent">
         </a>
         <nav class="nav is-hidden">
@@ -83,27 +83,27 @@
           </ul>
         </div>
       </section>
-      <section class="features">
-        <div class="features__container container">
-          <h2 class="features__title">Почему выбирают академию spreent</h2>
-          <div class="features__card">
-            <h3 class="features__card-question">Что я&nbsp;получу?</h3>
-            <p class="features__card-answer">Практические навыки</p>
-            <p class="features__card-detail">Даем конкретные знания по&nbsp;профессии. Тренируемся на&nbsp;реальных проектах и&nbsp;делаем свой продукт</p>
+      <section class="about">
+        <div class="about__container container">
+          <h2 class="about__title">Почему выбирают академию spreent</h2>
+          <div class="about__card">
+            <h3 class="about__card-question">Что я&nbsp;получу?</h3>
+            <p class="about__card-answer">Практические навыки</p>
+            <p class="about__card-detail">Даем конкретные знания по&nbsp;профессии. Тренируемся на&nbsp;реальных проектах и&nbsp;делаем свой продукт</p>
             <p class="subject subject--you">You</p>
             <p class="subject subject--qualification">UX&nbsp;Lead</p>
           </div>
-          <div class="features__card">
-            <h3 class="features__card-question">Кто будет учить?</h3>
-            <p class="features__card-answer">Опытные преподаватели</p>
-            <p class="features__card-detail">В&nbsp;школе преподают эксперты-практики, которые прямо сейчас работают в&nbsp;крупных компаниях индустрии</p>
+          <div class="about__card">
+            <h3 class="about__card-question">Кто будет учить?</h3>
+            <p class="about__card-answer">Опытные преподаватели</p>
+            <p class="about__card-detail">В&nbsp;школе преподают эксперты-практики, которые прямо сейчас работают в&nbsp;крупных компаниях индустрии</p>
             <p class="subject subject--you">You</p>
             <p class="subject subject--qualification">UX&nbsp;Lead</p>
           </div>
-          <div class="features__card">
-            <h3 class="features__card-question">Что мне дадут?</h3>
-            <p class="features__card-answer">Актуальные знания</p>
-            <p class="features__card-detail">Знаем, какие навыки нужны работодателям. Составляем программы, ориентируясь на&nbsp;тенденции рынка</p>
+          <div class="about__card">
+            <h3 class="about__card-question">Что мне дадут?</h3>
+            <p class="about__card-answer">Актуальные знания</p>
+            <p class="about__card-detail">Знаем, какие навыки нужны работодателям. Составляем программы, ориентируясь на&nbsp;тенденции рынка</p>
           </div>
         </div>
       </section>
@@ -190,7 +190,7 @@
         <div class="career__info">
           <h2 class="career__title">Где работают наши выпускники</h2>
           <p class="career__subtitle">Начните работать в&nbsp;крупнейших компаниях индустрии</p>
-          <a href="#" class="career__button">Присоединиться</a>
+          <a class="career__button" href="#">Присоединиться</a>
         </div>
         <ul class="career__grid">
           <li class="career__item"><img class="career__logo" src="icons/stack.svg#vtb" width="63" height="23" alt="Логотип ВТБ"></li>
@@ -242,22 +242,22 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <a href="#" class="footer__logo">
+        <a class="footer__logo" href="#" aria-current="page">
           <img class="footer__logo-image logo logo--white" src="images/logo-spreent.svg" width="267" height="59" alt="Логотип онлайн-академии Spreent в белом цвете">
         </a>
         <nav class="footer__nav">
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Об академии</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Корпоративное обучение</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Оплата</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Личный кабинет</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Связаться с нами</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Об академии</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Оплата</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Личный кабинет</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Связаться с нами</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
           </ul>
         </nav>
         <div class="footer__bottom">
           <p class="footer__copyright">Академия Богдана Гончаренко &copy;&nbsp;2024</p>
-          <a href="https://mish.design" class="footer__mish-link" target="_blank">
+          <a class="footer__mish-link" href="https://mish.design" target="_blank" rel="noopener noreferrer">
             <span class="footer__mish-text">by</span>
             <img class="footer__mish-logo" src="images/mish.svg" width="85" height="30" alt="Логотип студии mish">
           </a>
