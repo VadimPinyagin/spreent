@@ -1,7 +1,10 @@
 @import "common/variables.scss";
-// @import "common/mixins.scss";
+@import "common/mixins.scss";
 @import "common/root.scss";
 @import "common/fonts.scss";
 @import "common/global.scss";
 @import "blocks/burger.scss";
 @import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/button.scss";

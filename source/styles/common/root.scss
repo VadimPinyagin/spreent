@@ -9,4 +9,5 @@
   --accent: #d9f243; // Запасной #d1e231;
   --attention: #ff5e66;
   --disabled: #a9afb7; // Запасной #e0e0e0;
+  --shadow: color-mix(in srgb, var(--gray-blue, #1a153f), transparent 85%);
 }

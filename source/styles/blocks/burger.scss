@@ -1,6 +1,18 @@
 .burger {
-  width: 28px;
-  height: 18px;
-  background-image: url("../../icons/burger.svg");
-  background-color: transparent;
+  --icon: url("../../icons/burger.svg");
+
+  width: 70px;
+  aspect-ratio: 1;
+  background: transparent var(--icon) no-repeat center / 28px 18px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $mobile-width) {
+    box-shadow: 0 0 0 1px var(--shadow, #0d1627);
+  }
+}
+
+.burger--cross {
+  --icon: url("../../icons/cross.svg");
 }
