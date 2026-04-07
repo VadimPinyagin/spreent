@@ -7,6 +7,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.hero__lead-photo {
+  border-radius: 16px;
+}
+
 .hero__lead {
   display: flex;
   font-family: "Inter", "Arial", sans-serif;
@@ -15,10 +19,6 @@
   line-height: 24px;
   color: var(--white, #ffffff);
   position: relative;
-}
-
-.hero__lead-photo {
-  border-radius: 16px;
 }
 
 .hero__lead-name {
