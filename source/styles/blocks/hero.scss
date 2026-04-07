@@ -1,1 +1,107 @@
-//
+.hero__lead {
+  display: flex;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white, #ffffff);
+  padding-block: 40px 60px;
+  position: relative;
+}
+
+.hero__lead-photo {
+  border-radius: 16px;
+}
+
+.hero__lead-name {
+  margin-block-start: var(--margin-top, 0px);
+  margin-block-end: var(--margin-bottom, 0px);
+  margin-inline-start: var(--margin-left, 0px);
+  margin-inline-end: var(--margin-right, 0px);
+  position: relative;
+  font: inherit;
+  background-color: var(--brand, #1f75fe);
+  align-self: flex-start;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    bottom: var(--bottom, 0px);
+    right: var(--right, 0px);
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+.hero__lead--artur {
+  flex-direction: row-reverse;
+  column-gap: 41px;
+  --margin-top: 58px;
+  --margin-left: 26px;
+  --right: 48px;
+  --bottom: 24px;
+  --icon: url("../../icons/palm.svg");
+
+  flex-direction: row-reverse;
+  column-gap: 41px;
+}
+
+.hero__lead--sergey {
+  --icon: url("../../icons/cursor.svg");
+  --top: 5px;
+}
+
+.hero__lead--artur {
+  --margin-top: 58px;
+
+
+}
+// .hero__lead-name {
+//   margin-block-start: var(--margin-top, 0px);
+//   margin-block-end: var(--margin-bottom, 0px);
+//   margin-inline-start: var(--margin-left, 0px);
+//   margin-inline-end: var(--margin-right, 0px);
+//   font: inherit;
+//   background-color: var(--brand, #1f75fe);
+//   align-self: flex-start;
+
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 26px;
+//     height: 26px;
+//     position: absolute;
+//     background-image: var(--icon);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     top: var(--top);
+//   }
+
+//   &:has(.hero__lead--artur) {
+//     --icon: url("../../icons/palm.svg");
+//     --top: 10px;
+//   }
+
+//   &:has(.hero__lead--sergey) {
+//     --icon: url("../../icons/cursor.svg");
+//   }
+
+//   &:has(.hero__lead--michael) {
+//     --icon: url("../../icons/cursor.svg");
+//     flex-direction: column-reverse;
+//   }
+// }
+
+.hero__lead--sergey {
+  flex-direction: column;
+  gap: 41px;
+}
+
+.hero__lead--michael {
+  flex-direction: column-reverse;
+}
