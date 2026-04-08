@@ -1,14 +1,27 @@
 .hero {
   padding-block: 40px 60px;
+
+  @media (min-width: $desktop-width) {
+    padding-block: 34px 99px;
+  }
 }
 
 .hero__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  // @media (min-width: $desktop-width) {
+  //   row-gap: 97px;
+  // }
 }
 
 .hero__lead-photo {
   border-radius: 16px;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 24px;
+    row-gap: 97px;
+  }
 }
 
 .hero__lead {
@@ -22,8 +35,8 @@
 }
 
 .hero__lead-name {
-  margin-block: var(--margin-top, 0px) var(--margin-bottom, 0px);
-  margin-inline: var(--margin-left, 0px) var(--margin-right, 0px);
+  margin-block: var(--name-margin-top, 0px) var(--name-margin-bottom, 0px);
+  margin-inline: var(--name-margin-left, 0px) var(--name-margin-right, 0px);
   padding: 2px 9px 2px 8px;
   position: relative;
   font: inherit;
@@ -46,8 +59,8 @@
 
 
 .hero__lead--artur {
-  --margin-top: 43px;
-  --margin-left: 47px;
+  --name-margin-top: 43px;
+  --name-margin-left: 47px;
   --left: -26px;
   --top: -26px;
   --icon: url("../../icons/palm.svg");
@@ -58,12 +71,19 @@
   column-gap: 41px;
   grid-row: 1;
   grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    --name-margin-top: 59px;
+    justify-content: end;
+    margin-inline-end: 113px;
+    column-gap: 60px;
+  }
 }
 
 .hero__lead--sergey {
-  --margin-top: 40px;
-  --margin-left: 26px;
-  --margin-right: 15px;
+  --name-margin-top: 40px;
+  --name-margin-left: 26px;
+  --name-margin-right: 15px;
   --left: -24px;
   --top: -24px;
   --icon: url("../../icons/cursor.svg");
@@ -71,13 +91,23 @@
   flex-direction: column;
   grid-row: 4;
   grid-column: 1;
+
+  @media (min-width: $desktop-width) {
+    --name-margin-bottom: -8px;
+    grid-row: 3;
+    width: fit-content;
+    margin-block-start: 174px;
+    margin-inline-start: 54px;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .hero__lead--michael {
   --icon: url("../../icons/cursor.svg");
   --name-position: start;
-  --margin-top: 40px;
-  --margin-left: 44px;
+  --name-margin-top: 40px;
+  --name-margin-left: 44px;
   --left: -24px;
   --top: -24px;
   flex-direction: column-reverse;
@@ -85,13 +115,29 @@
   grid-column: 2;
   align-items: end;
   row-gap: 29px;
+
+   @media (min-width: $desktop-width) {
+    --name-position: end;
+    --name-margin-bottom: 125px;
+    height: fit-content;
+    margin-inline-end: 122px;
+    margin-block-end: -20px;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+    flex-direction: row;
+  }
 }
 
 .hero__content {
-  margin-block: 31px 40px;
-  padding-inline-start: 41px;
+  margin-block: 30px 40px;
+  padding-inline-start: 42px;
   grid-row: 3/4;
   grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    margin-block-start: -64px;
+  }
 }
 
 .hero__title {
@@ -99,26 +145,65 @@
   font-family: "Loos Wide", "Arial", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  line-height: 98%;
+  line-height: 39px;
   letter-spacing: -1%;
   margin: 0;
   display: flex;
   flex-direction: column;
 
-  &::before {
-    content: "—";
-    display: block;
-    position: absolute;
-    left: -41px;
+    &::before {
+      content: "—";
+      display: block;
+      position: absolute;
+      left: -41px;
+
+      @media (min-width: $desktop-width) {
+      left: 6px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    font-size: 90px;
+    line-height: 85px;
+    left: -47px;
+    margin-block-start: 20px;
+    letter-spacing: 0;
+  }
+}
+
+.hero__title-part--left {
+
+  @media (min-width: $desktop-width) {
+    padding-inline-start: 97px;
+  }
+}
+
+.hero__title-part--right {
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+    padding-inline-end: 43px;
   }
 }
 
 .hero__description {
-  margin-block: 16px 0;
+  margin-block: 17px 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 34px;
+    margin-block-start: 30px;
+    margin-inline-start: 303px;
+  }
 }
 
 .hero__button {
   margin-block-start: 25px;
   padding: 14px 25px 16px;
-  letter-spacing: 1%;
+
+  @media (min-width: $desktop-width) {
+    margin-block-start: 36px;
+    margin-inline-start: 301px;
+  }
 }
