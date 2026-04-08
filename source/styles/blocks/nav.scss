@@ -47,9 +47,7 @@
     position: static;
     padding: 0;
     gap: 20px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 
     .is-hidden & {
       display: flex;

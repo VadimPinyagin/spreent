@@ -1,1 +1,1 @@
-import "./toggle-nav.js";
+import './toggle-nav.js';
