@@ -1,0 +1,49 @@
+
+.card {
+
+  width: 450px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 32px;
+  background-image: var(--card-color);
+  background-color: var(--card-color);
+  color: var(--text-color);
+}
+
+.card--skills {
+  --text-color: var(--white, #ffffff);
+  --card-color: radial-gradient(97.9% 241.31% at 0% 3.7%, #002fa8 0%, #001a68 100%);
+
+}
+
+.card--teachers {
+  --card-color: var(--accent, #d1e231);
+}
+
+.card--knowledge {
+  --card-color: var(--light-accent, #afdafc);
+}
+.card__question {
+  --font-weight: 600;
+  --p-font-size: 14px;
+  --p-line-height: 130%;
+
+  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-weight: var(--font-weight);
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+
+  padding: 7px 17px;
+  border-radius: 99em;
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+}
+
+.card__answer {
+  --h-font-size: 30px;
+  --h-line-height: 1.02em;
+  font-family:var(--ff-loos-wide, "Arial", sans-serif);
+  font-size: var(--h-font-size);
+  line-height: var(--h-line-height);
+}
+

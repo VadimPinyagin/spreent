@@ -3,14 +3,14 @@
 }
 
 .page__body {
+  font-family: var( --ff-manrope, "Arial", sans-serif);
+  font-weight: var(--font-weight, 500);
+  font-size: var(--p-font-size, 18px);
+  line-height: var(--p-line-height, 140px);
+  color: var(--gray-blue, #1a153f);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: "Manrope", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  color: var(--gray-blue, #1a153f);
   background-color: var(--white, #ffffff);
 }

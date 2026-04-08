@@ -1,10 +1,12 @@
 .button {
   @include link-reset;
+  --letter-spacing: 0.01em;
+
   display: inline-block;
-  font-family: "Loos Wide", "Arial", sans-serif;
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
   color: var(--white, #ffffff);
   background-color: var(--brand, #1f75fe);
   border-radius: 99em;
   padding: 5px 15px;
-  letter-spacing: 1%;
+  letter-spacing: var(--letter-spacing);
 }

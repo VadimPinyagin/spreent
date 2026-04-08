@@ -3,11 +3,21 @@
   --cobalt-blue: #0039cc; // Запасной #122faa;
   --gray-blue: #0d1627; // Запасной #1A153F;
   --light-blue: #d1deff; // Запасной #afdafc;
-  --gradient-card: linear-gradient(135deg, #002fa8 0%, #001a68 100%); // Запасной #122faa;
+  // --card-color: radial-gradient(97.9% 241.31% at 0% 3.7%, #002fa8 0%, #001a68 100%);
+  --gradient-card-liner: linear-gradient(135deg, #002fa8 0%, #001a68 100%); // Запасной #122faa;
   --white: #ffffff;
   --light-accent: #eef4f6; // Запасной #afdafc;
   --accent: #d9f243; // Запасной #d1e231;
   --attention: #ff5e66;
   --disabled: #a9afb7; // Запасной #e0e0e0;
   --shadow: color-mix(in srgb, var(--gray-blue, #1a153f), transparent 85%);
+
+  --ff-manrope: "Manrope", "Arial", sans-serif; //"Arial", sans-serif
+  --ff-loos-wide: "Loos Wide", "Arial", sans-serif; //"Arial", sans-serif
+  --font-weight: 500;
+  --h-font-size: 40px;
+  --h-line-height: 98%;
+  --p-font-size: 18px;
+  --p-line-height: 140%;
+  --letter-spacing: -0.01em;  //-0.01em
 }
