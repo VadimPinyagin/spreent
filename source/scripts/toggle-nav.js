@@ -1,0 +1,43 @@
+const nav = document.querySelector('.nav');
+const btnBurger = nav.querySelector('.burger');
+const hiddenClass = 'is-hidden';
+const btnCloseClass = 'burger--cross';
+
+const closeNav = () => {
+  nav.classList.add(hiddenClass);
+  btnBurger.classList.remove(btnCloseClass);
+
+  document.removeEventListener('keydown', onEscKeydown);
+  document.removeEventListener('click', onOutsideMenuClick);
+};
+
+const toggleNav = () => {
+  nav.addEventListener('click', (e) => {
+    const target = e.target;
+    if (btnBurger.contains(target)) {
+
+      if (nav.classList.contains(hiddenClass)) {
+        nav.classList.remove(hiddenClass);
+        btnBurger.classList.add(btnCloseClass);
+        document.addEventListener('keydown', onEscKeydown);
+        document.addEventListener('click', onOutsideMenuClick);
+      } else{
+        closeNav();
+      }
+    }
+  });
+};
+
+function onEscKeydown(e) {
+  if (e.key === 'Escape') {
+    closeNav();
+  }
+}
+
+function onOutsideMenuClick(e) {
+  if (!nav.contains(e.target)) {
+    closeNav();
+  }
+}
+
+toggleNav();
