@@ -114,16 +114,14 @@
   align-items: end;
   row-gap: 29px;
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     --name-position: end;
     --name-margin-bottom: 125px;
     height: fit-content;
     margin-inline-end: 122px;
     margin-block-end: -20px;
     grid-row: 3;
-    justify-self: end;
-    align-self: end;
-    flex-direction: row;
+    place-self: end;
   }
 }
 
@@ -149,13 +147,13 @@
   display: flex;
   flex-direction: column;
 
-    &::before {
-      content: "—";
-      display: block;
-      position: absolute;
-      left: -41px;
+  &::before {
+    content: "—";
+    display: block;
+    position: absolute;
+    left: -41px;
 
-      @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       left: 6px;
     }
   }
@@ -171,14 +169,12 @@
 }
 
 .hero__title-part--left {
-
   @media (min-width: $desktop-width) {
     padding-inline-start: 97px;
   }
 }
 
 .hero__title-part--right {
-
   @media (min-width: $desktop-width) {
     text-align: right;
     padding-inline-end: 43px;

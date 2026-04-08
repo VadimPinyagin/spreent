@@ -13,7 +13,6 @@
 .card--skills {
   --text-color: var(--white, #ffffff);
   --card-color: radial-gradient(97.9% 241.31% at 0% 3.7%, #002fa8 0%, #001a68 100%);
-
 }
 
 .card--teachers {
@@ -23,6 +22,7 @@
 .card--knowledge {
   --card-color: var(--light-accent, #afdafc);
 }
+
 .card__question {
   --font-weight: 600;
   --p-font-size: 14px;
@@ -42,8 +42,7 @@
 .card__answer {
   --h-font-size: 30px;
   --h-line-height: 1.02em;
-  font-family:var(--ff-loos-wide, "Arial", sans-serif);
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
   font-size: var(--h-font-size);
   line-height: var(--h-line-height);
 }
-
