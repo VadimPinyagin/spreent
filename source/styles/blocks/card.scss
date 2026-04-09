@@ -4,25 +4,32 @@
   height: 600px;
   padding: 30px;
   border-radius: 32px;
-  background: var(--card-image) no-repeat right 20px bottom / 390px 442px, var(--card-color);
+  background: var(--card-image) no-repeat right bottom / var(--w-size) var(--h-size), var(--card-color);
   background-color: var(--card-color);
   color: var(--text-color);
 }
 
 .card--skills {
+  --w-size: 390px;
+  --h-size: 442px;
   --text-color: var(--white, #ffffff);
   --card-color: radial-gradient(97.9% 241.31% at 0% 3.7%, #002fa8 0%, #001a68 100%);
-  --card-image: url("../../images/skills-image.svg");
+  --card-image: url("../../images/card-bg/skills-bg.svg");
 }
 
 .card--teachers {
+  --w-size: 329px;
+  --h-size: 403px;
   --card-color: var(--accent, #d1e231);
-  --card-image: image-set("../images/card-images/teacher-image-small@1x.webp" 1x, "../images/card-images/teacher-image-small@2x.webp" 2x, "../images/card-images/teacher-image-small@1x.png" 1x, "../images/card-images/teacher-image-small@2x.png" 2x);
-  background-size: 270px 300px;
+  --card-image: image-set("../images/card-bg/teacher-bg-small@1x.webp" 1x, "../images/card-bg/teacher-bg-small@2x.webp" 2x, "../images/card-bg/teacher-bg-small@1x.png" 1x, "../images/card-bg/teacher-bg-small@2x.png" 2x);
+  background-position: right -23px bottom -23px;
 }
 
 .card--knowledge {
+  --w-size: 426px;
+  --h-size: 485px;
   --card-color: var(--light-accent, #afdafc);
+  --card-image: url("../../images/card-bg/knowledge-bg-small.svg");
 }
 
 .card__question {
@@ -49,4 +56,8 @@
   font-family: var(--ff-loos-wide, "Arial", sans-serif);
   font-size: var(--h-font-size);
   line-height: var(--h-line-height);
+}
+
+.card__detail {
+  margin-block: 15px;
 }
