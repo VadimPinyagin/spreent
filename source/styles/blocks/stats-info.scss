@@ -1,0 +1,18 @@
+.stats-info {
+  --letter-spacing: -0.06em;
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
+  font-weight: 500;
+}
+
+.stats-info__value {
+  font-size: 90px;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  margin-inline-start: 0;
+}
+
+.stats-info__text {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
