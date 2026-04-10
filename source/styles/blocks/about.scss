@@ -1,7 +1,7 @@
 .about {
   --h-font-size: 38px;
 
-  padding-block: 90px;
+  padding-block: 90px 130px;
 
   @media (min-width: $desktop-width) {
     padding-block: 110px;
@@ -43,18 +43,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    align-items: start;
     grid-template-columns: 276px;
-    grid-template-rows: auto;
-    align-content: space-between;
-    row-gap: 196px;
+    grid-template-rows: repeat(2, auto) 1fr auto;
   }
-
 }
-
-// .about__item-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: start;
-//   width: 314px;
-// }

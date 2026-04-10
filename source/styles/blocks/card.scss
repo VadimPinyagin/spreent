@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: 785px;
-    min-height: auto;
+    min-height: 500px;
     background-position: right -15px bottom, 0 0;
   }
 }
@@ -66,6 +66,18 @@
   }
 }
 
+.card--skills:has(.card__question) {
+  --bg-color: rgb(255, 255, 255, 0.2);
+}
+
+.card--teachers:has(.card__question) {
+  --bg-color: rgba(0, 39, 178, 0.059);
+}
+
+.card--knowledge:has(.card__question) {
+  --bg-color: rgba(0, 39, 178, 0.059);
+}
+
 .card__question {
   --font-weight: 600;
   --p-font-size: 14px;
@@ -83,23 +95,10 @@
   backdrop-filter: blur(30px);
 
   @media (min-width: $desktop-width) {
-    grid-row: 1/2;
-    grid-column: 1/2;
     justify-self: start;
   }
 }
 
-.card--skills:has(.card__question) {
-  --bg-color: rgb(255, 255, 255, 0.2);
-}
-
-.card--teachers:has(.card__question) {
-  --bg-color: rgba(0, 39, 178, 0.059);
-}
-
-.card--knowledge:has(.card__question) {
-  --bg-color: rgba(0, 39, 178, 0.059);
-}
 
 .card__answer {
   --h-font-size: 30px;
@@ -111,9 +110,7 @@
 
   @media (min-width: $desktop-width) {
     --h-font-size: 34px;
-    margin-block: 45px 15px;
-    grid-row: 1/2;
-    grid-column: 1/2;
+    margin-block: 13px;
     align-self: end;
   }
 }
@@ -122,7 +119,6 @@
   margin-block: 15px;
 
   @media (min-width: $desktop-width) {
-    grid-row: 2;
     align-self: end;
     margin-block: 15px 0;
   }
