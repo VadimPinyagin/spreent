@@ -10,18 +10,3 @@
     width: 1360px;
   }
 }
-
-.community__link {
-  display: block;
-  width: 90px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: var(--white, #ffffff);
-  background-image: url(../../icons/plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60px 60px;
-  border: 2px solid var(--brand, #1F75FE);
-  box-shadow: 0 0 0 5px var(--white, #ffffff);
-  z-index: 5;
-}
