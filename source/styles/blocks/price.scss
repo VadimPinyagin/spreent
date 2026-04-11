@@ -1,1 +1,116 @@
-//
+/* Общие стили для секции */
+.price {
+  width: 450px;
+  margin: auto;
+  font-family: var(--ff-manrope, "Arial", sans-serif);
+  color: var(--gray-blue, #1a153f);
+  padding-block: 35px 60px;
+}
+
+.price__title {
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin-block: 0 5px;
+}
+
+.price__wrapper {
+  background-color: #f4f7f9;
+  border-radius: 32px;
+  margin-block: 29px;
+  padding-block: 30px;
+  padding-inline: 31px 30px;
+  box-sizing: border-box;
+}
+
+.price__plan {
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.02;
+  margin: 0 0 24px 0;
+}
+
+/* Список преимуществ */
+.price__list {
+  list-style: none;
+  padding: 0;
+  margin-block: 31px 37px;
+  display: grid;
+  row-gap: 15px;
+}
+
+.price__item {
+  position: relative;
+  padding-inline-start: 30px;
+}
+
+.price__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 21px;
+  height: 21px;
+  background-color: var(--brand, #1f75fe);
+  background: url("../../icons/check-mark.svg") no-repeat center / 11px 9px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.price__offer {
+  box-shadow: inset 0 1px 0 0 var(--shadow, #0d1627);
+  padding-top: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.price__values {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price__current {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.price__old {
+  font-size: 14px;
+  color: #718096;
+  text-decoration: line-through;
+  margin: 0;
+  display: none;
+}
+
+.price__separator {
+  font-size: 14px;
+  color: #718096;
+  margin: 4px 0;
+}
+
+.price__button {
+  display: inline-block;
+  background-color: var(--brand, #1f75fe);
+  color: white;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 99em;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.price__button:hover {
+  background-color: #1d4ed8;
+}
