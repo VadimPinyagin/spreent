@@ -6,16 +6,18 @@
   width: 451px;
   padding: 22px;
   border-radius: 32px;
-  background: radial-gradient(94.44% 92.48% at 2.96% 50%, #DAEEF4 18.98%, #EEF4F6 50.96%, #FFFFFF 88.74%);
-  background-repeat: no-repeat;
+  // background: radial-gradient(94.44% 92.48% at 2.96% 50%, #DAEEF4 18.98%, #EEF4F6 50.96%, #FFFFFF 88.74%);
+  // background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {
-    width: 608px;
+    width: 573px;
+    padding-inline-start: 10px;
   }
 }
 
 .graduates__item {
   width: 90px;
+  height: 90px;
   grid-row: 1;
 
   @for $i from 1 through 5 {
@@ -27,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     width: 120px;
+    height: 120px;
   }
 }
 
@@ -50,12 +53,13 @@
   background-image: url(../../icons/plus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60px 60px;
+  background-size: 40px;
   border: 2px solid var(--brand, #1F75FE);
   box-shadow: 0 0 0 5px var(--white, #ffffff);
   z-index: 5;
 
   @media (min-width: $desktop-width) {
     width: 120px;
+    background-size: 60px;
   }
 }
