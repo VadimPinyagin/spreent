@@ -5,6 +5,7 @@
   gap: 30px;
   font-family: var(--ff-loos-wide, "Arial", sans-serif);
   font-weight: 500;
+  letter-spacing: var(--letter-spacing);
   margin-block: 25px;
 }
 
@@ -21,8 +22,16 @@
 }
 
 .stats-info__text {
-   font-family: var(--ff-manrope, "Arial", sans-serif);
+  --letter-spacing: 0;
+  --text-margin-top: 10px;
+
+  font-family: var(--ff-manrope, "Arial", sans-serif);
   font-size: 18px;
   line-height: 1.4;
-  letter-spacing: 0;
+  letter-spacing: var(--letter-spacing);
+  margin-block-start: var(--text-margin-top);
+
+  .stats-info__item:first-child & {
+    --text-margin-top: 5px;
+  }
 }
