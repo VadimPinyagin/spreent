@@ -1,5 +1,6 @@
 const nav = document.querySelector('.nav');
 const btnBurger = nav.querySelector('.burger');
+const headerButton = nav.querySelector('.header__button');
 const hiddenClass = 'is-hidden';
 const btnCloseClass = 'burger--cross';
 
@@ -35,7 +36,7 @@ function onEscKeydown(e) {
 }
 
 function onOutsideMenuClick(e) {
-  if (!nav.contains(e.target)) {
+  if (!nav.contains(e.target) || headerButton.contains(e.target)) {
     closeNav();
   }
 }
