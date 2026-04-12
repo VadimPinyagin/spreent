@@ -1,0 +1,35 @@
+.work{
+  padding-block: 32px 128px;
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
+}
+
+.work__info {
+  width: 450px;
+}
+
+.work__icon {
+  align-self: center;
+  justify-self: center;
+}
+
+.work__title {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--gray-blue, #1a153f);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin-block: 0 15px;
+}
+
+.work__subtitle {
+  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-size: 18px;
+  line-height: 1.4;
+  margin-block: 18px 25px;
+}
+
+.work__button {
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 15px 25px;
+}
