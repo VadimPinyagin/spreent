@@ -11,10 +11,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    column-gap: 324px;
-    row-gap: 35px;
+    gap: 35px 324px;
     justify-content: start;
-
   }
 }
 
