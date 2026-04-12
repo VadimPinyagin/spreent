@@ -1,0 +1,83 @@
+.upgrade {
+  font-family: var(--ff-loos-wide, "Arial", sans-serif);
+  color: var(--gray-blue, #1a153f);
+  background: linear-gradient( to bottom, #eef4f6 465px, #0d1627 465px);
+}
+
+.upgrade__title,
+.upgrade__form-title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin-block: 0 5px;
+}
+
+.upgrade__subtitle {
+  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-size: 18px;
+  line-height: 1.4;
+  margin-block: 18px 25px;
+  opacity: 0.7;
+}
+
+.upgrade__button {
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 15px 25px;
+  transition: opacity 0.2s;
+}
+
+.upgrade__certificate-image {
+  margin-block: 55px 84px;
+}
+
+.upgrade__form-title {
+  color: var(--white, #ffffff);
+}
+
+.upgrade__form{
+  margin-block: 39px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upgrade__field {
+  position: relative;
+}
+
+.upgrade__input {
+  border: none;
+  padding: 20px 25px;
+  margin-block-end: 10px;
+  border-radius: 99em;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+
+.upgrade__form-label {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgb(255, 255, 255, 0.5);
+
+}
+
+.upgrade__submit {
+  width: max-content;
+  background-color: var(--accent, #d9f243);
+  border: none;
+  margin-block-start: 6px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: inherit;
+  padding: 14px 24px;
+}
