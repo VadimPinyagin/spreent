@@ -2,10 +2,11 @@
   display: grid;
   padding-block: 32px 135px;
   font-family: var(--ff-loos-wide, "Arial", sans-serif);
-  width: 1440px;
+  width: 480px;
   margin: auto;
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     margin-block-start: 55px;
