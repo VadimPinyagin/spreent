@@ -8,10 +8,6 @@
   border: none;
   cursor: pointer;
 
-  @media (min-width: $mobile-width) {
-    box-shadow: 0 -1px 0 1px var(--shadow, #0d1627);
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
   }

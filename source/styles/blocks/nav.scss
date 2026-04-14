@@ -2,23 +2,6 @@
   display: flex;
   align-items: center;
 
-  // &:not(.is-hidden)::before {
-  //   content: "";
-  //   display: block;
-  //   position: fixed;
-  //   inset: 70px 0 0;
-  //   width: 100%;
-  //   pointer-events: none;
-  //   background-color: rgb(255, 255, 255, 0.7);
-  //   backdrop-filter: blur(80px);
-  //   overflow: visible;
-
-  //   @media (min-width: $desktop-width) {
-  //     display: none;
-  //   }
-  // }
-
-
   @media (min-width: $desktop-width) {
     flex-direction: row-reverse;
     column-gap: 101px;
@@ -60,7 +43,7 @@
   @include link-reset;
   font-family: "Loos Wide", "Arial", sans-serif;
   font-size: 30px;
-  line-height: 102%;
+  line-height: 1.02;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

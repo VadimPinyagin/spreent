@@ -1,11 +1,10 @@
 .stats-info {
-  --letter-spacing: -0.06em;
   display: flex;
   flex-direction: column;
   gap: 30px;
   font-family: var(--ff-loos-wide, "Arial", sans-serif);
   font-weight: 500;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: -0.06em;
   margin-block: 25px;
 
   @media (min-width: $desktop-width) {

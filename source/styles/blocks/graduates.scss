@@ -6,8 +6,6 @@
   width: 451px;
   padding: 22px;
   border-radius: 32px;
-  // background: radial-gradient(94.44% 92.48% at 2.96% 50%, #DAEEF4 18.98%, #EEF4F6 50.96%, #FFFFFF 88.74%);
-  // background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {
     width: 573px;
@@ -49,11 +47,7 @@
   width: 90px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: var(--white, #ffffff);
-  background-image: url("../../icons/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40px;
+  background: var(--white, #ffffff) url("../../icons/plus.svg") no-repeat center / 40px;
   border: 2px solid var(--brand, #1f75fe);
   box-shadow: 0 0 0 5px var(--white, #ffffff);
   z-index: 5;
