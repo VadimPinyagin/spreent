@@ -7,6 +7,18 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }

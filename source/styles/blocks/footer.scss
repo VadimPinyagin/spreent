@@ -17,6 +17,18 @@
 
 .footer__logo-image {
   filter: brightness(0) invert(1);
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .footer__list {
@@ -32,6 +44,10 @@
   }
 }
 
+.footer__logo {
+  height: min-content;
+}
+
 .footer__item {
   break-inside: avoid;
 }
@@ -41,6 +57,18 @@
   text-decoration: none;
   color: var(--white, #ffffff);
   margin-block-end: 15px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .footer__legal {
@@ -71,6 +99,18 @@
 
 .footer__mish-link {
   position: relative;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 
   @media (min-width: $desktop-width) {
     margin-inline-end: 203px;
