@@ -17,6 +17,18 @@
   @media (min-width: $desktop-width) {
     margin-inline: 0;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .header__button {

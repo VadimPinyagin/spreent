@@ -3,7 +3,7 @@
   color: var(--gray-blue, #1a153f);
   background: linear-gradient(to bottom, var(--light-accent, #ffffff) 496px, var(--gray-blue, #1a153f) 465px);
   box-shadow: inset 0 -1px 0 0 rgb(255, 255, 255, 0.15);
-  padding-block:31px 93px;
+  padding-block: 31px 93px;
 
   @media (min-width: $desktop-width) {
     --light-accent: var(--white, #ffffff);

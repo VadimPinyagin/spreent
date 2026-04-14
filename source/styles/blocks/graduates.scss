@@ -50,7 +50,6 @@
   background: var(--white, #ffffff) url("../../icons/plus.svg") no-repeat center / 40px;
   border: 2px solid var(--brand, #1f75fe);
   box-shadow: 0 0 0 5px var(--white, #ffffff);
-  z-index: 5;
 
   @media (min-width: $desktop-width) {
     width: 120px;

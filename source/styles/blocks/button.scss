@@ -1,5 +1,6 @@
 .button {
-  @include link-reset;
+  text-decoration: none;
+
   --letter-spacing: 0.01em;
 
   display: inline-block;
@@ -9,4 +10,16 @@
   border-radius: 99em;
   padding: 5px 15px;
   letter-spacing: var(--letter-spacing);
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
