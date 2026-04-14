@@ -1,13 +1,13 @@
 .upgrade {
   font-family: var(--ff-loos-wide, "Arial", sans-serif);
   color: var(--gray-blue, #1a153f);
-  background: linear-gradient(to bottom, var(--light-accent, #ffffff) 465px, var(--gray-blue, #1a153f) 465px);
+  background: linear-gradient(to bottom, var(--light-accent, #ffffff) 496px, var(--gray-blue, #1a153f) 465px);
   box-shadow: inset 0 -1px 0 0 rgb(255, 255, 255, 0.15);
-  padding-block-end: 91px;
+  padding-block:31px 91px;
 
   @media (min-width: $desktop-width) {
     --light-accent: var(--white, #ffffff);
-
+    padding-block-start: 0;
     background: linear-gradient(to bottom, var(--light-accent, #ffffff) 251px, var(--gray-blue, #1a153f) 251px);
   }
 }
@@ -78,6 +78,10 @@
 
 .upgrade__form-wrapper {
   grid-column: 1/3;
+
+  @media (min-width: $desktop-width) {
+    margin-block-start: 91px;
+  }
 }
 
 .upgrade__form-title {
@@ -111,11 +115,15 @@
 
 .upgrade__input {
   border: none;
-  padding: 20px 25px;
+  padding: 15px 25px;
   margin-block-end: 10px;
   border-radius: 99em;
   width: 450px;
   background-color: rgba(255, 255, 255, 0.2);
+  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.5);
 
   &::placeholder {
     color: transparent;
@@ -123,9 +131,9 @@
 
   @media (min-width: $desktop-width) {
     width: 378px;
+    margin-block-end: 0;
   }
 }
-
 
 .upgrade__form-label {
   position: absolute;
@@ -134,23 +142,22 @@
   font-family: var(--ff-manrope, "Arial", sans-serif);
   font-size: 18px;
   line-height: 1.4;
-  color: rgb(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .upgrade__submit {
   width: max-content;
   background-color: var(--accent, #d9f243);
   border: none;
-  margin-block-start: 6px;
+  margin-block-start: 5px;
   font-size: 18px;
   line-height: 1.4;
   color: inherit;
-  padding: 15px 24px;
+  padding: 14px 24px;
 
   @media (min-width: $desktop-width) {
     margin-block-start: 0;
     padding-block: 14px;
-    height: 55px;
   }
 }
 
@@ -163,4 +170,10 @@
   color: var(--white, #ffffff);
   opacity: 0.5;
   margin-block-end: 0;
+}
+
+.upgrade__field:has(.upgrade__input:focus) .upgrade__form-label,
+.upgrade__field:has(.upgrade__input:not(:placeholder-shown)) .upgrade__form-label {
+  opacity: 0;
+  pointer-events: none;
 }

@@ -45,7 +45,7 @@
               <source type="image/webp" media="(min-width: 1440px)" width="329" height="200" srcset="images/artur/artur-large-photo@1x.webp 1x, images/artur/artur-large-photo@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/artur/artur-large-photo@1x.jpg 1x, images/artur/artur-large-photo@2x.jpg 2x">
               <source type="image/webp" media="(min-width: 480px)" width="221" height="135" srcset="images/artur/artur-small-photo@1x.webp 1x, images/artur/artur-small-photo@2x.webp 2x">
-              <img class="hero__lead-photo" src="images/artur/artur-large-photo@1x.jpg" srcset="images/artur/artur-small-photo@2x.jpg 2x" width="221" height="135" alt="Фото молодого человека по имени Артур с темными короткими волосами, который слегка улыбается и смотрит в камеру, приложив руку к затылку.">
+              <img class="hero__lead-photo" src="images/artur/artur-large-photo@1x.jpg" srcset="images/artur/artur-small-photo@2x.jpg 2x" width="221" height="135" fetchpriority="high" alt="Фото молодого человека по имени Артур с темными короткими волосами, который слегка улыбается и смотрит в камеру, приложив руку к затылку.">
             </picture>
             <p class="hero__lead-name">Артур</p>
           </div>
@@ -62,7 +62,7 @@
               <source type="image/webp" media="(min-width: 1440px)" width="175" height="256" srcset="images/sergey/sergey-large-photo@1x.webp 1x, images/sergey/sergey-large-photo@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="175" height="256" srcset="images/sergey/sergey-large-photo@1x.jpg 1x, images/sergey/sergey-large-photo@2x.jpg 2x">
               <source type="image/webp" media="(min-width: 480px)" width="117" height="171" srcset="images/sergey/sergey-small-photo@1x.webp 1x, images/sergey/sergey-small-photo@2x.webp 2x">
-              <img class="hero__lead-photo" src="images/sergey/sergey-small-photo@1x.jpg" srcset="images/sergey/sergey-small-photo@2x.jpg 2x" width="117" height="171" alt="Черно-белый портрет Сергея в худи и бейсболке на фоне водоема.">
+              <img class="hero__lead-photo" src="images/sergey/sergey-small-photo@1x.jpg" srcset="images/sergey/sergey-small-photo@2x.jpg 2x" width="117" height="171" fetchpriority="high" alt="Черно-белый портрет Сергея в худи и бейсболке на фоне водоема.">
             </picture>
             <p class="hero__lead-name">Сергей</p>
           </div>
@@ -71,7 +71,7 @@
               <source type="image/webp" media="(min-width: 1440px)" width="329" height="200" srcset="images/michael/michael-large-photo@1x.webp 1x, images/michael/michael-large-photo@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/michael/michael-large-photo@1x.jpg 1x, images/michael/michael-large-photo@2x.jpg 2x">
               <source type="image/webp" media="(min-width: 480px)" width="221" height="135" srcset="images/michael/michael-small-photo@1x.webp 1x, images/michael/michael-small-photo@2x.webp 2x">
-              <img class="hero__lead-photo" src="images/michael/michael-small-photo@1x.jpg" srcset="images/michael/michael-small-photo@2x.jpg 2x" width="221" height="135" alt="Фото Михаила на открытом воздухе на фоне кустов и деревьев в парке.">
+              <img class="hero__lead-photo" src="images/michael/michael-small-photo@1x.jpg" srcset="images/michael/michael-small-photo@2x.jpg 2x" width="221" height="135" fetchpriority="high" alt="Фото Михаила на открытом воздухе на фоне кустов и деревьев в парке.">
             </picture>
             <p class="hero__lead-name">Миша</p>
           </div>
@@ -210,7 +210,7 @@
               </div>
               <div class="upgrade__field">
                 <label class="upgrade__form-label" for="user-phone">Телефон</label>
-                <input class="upgrade__input" id="user-phone" type="tel" name="phone" placeholder="+7 999 999 00 09" required>
+                <input class="upgrade__input" id="user-phone" type="tel" name="phone" placeholder="8 999 999 00 09" required>
               </div>
               <div class="upgrade__field">
                 <label class="upgrade__form-label" for="user-email">Почта</label>
@@ -218,7 +218,7 @@
               </div>
               <button class="upgrade__submit button" type="submit">Оставить заявку</button>
             </form>
-            <p class="upgrade__policy">Нажимая кнопку «Оставить заявку», вы подтверждаете согласие на обработку персональных данных</p>
+            <p class="upgrade__policy">Нажимая кнопку «Оставить заявку», вы подтверждаете <br>согласие на обработку персональных данных</p>
           </div>
         </div>
       </section>
