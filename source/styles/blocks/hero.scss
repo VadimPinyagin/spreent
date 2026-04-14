@@ -21,6 +21,14 @@
   position: relative;
 }
 
+.hero__lead picture {
+  display: contents;
+}
+
+.hero__lead source {
+  display: contents;
+}
+
 .hero__lead-photo {
   border-radius: 16px;
 

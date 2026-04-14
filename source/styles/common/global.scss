@@ -9,16 +9,7 @@ img {
   height: auto;
 }
 
-button {
-  font-family: inherit;
-}
-
 .visually-hidden {
   position: fixed;
   transform: scale(0);
-}
-
-picture,
-source {
-  display: contents;
 }
