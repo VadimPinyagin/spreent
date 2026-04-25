@@ -1,8 +1,8 @@
 
 .card {
-  width: 450px;
-  min-height: 600px;
-  padding: 30px;
+  width: 290px;
+  min-height: 455px;
+  padding: 20px;
   border-radius: 32px;
   background: var(--card-image) no-repeat right bottom / var(--w-size) var(--h-size), var(--card-color);
   background-color: var(--card-color);
@@ -16,8 +16,8 @@
 }
 
 .card--skills {
-  --w-size: 390px;
-  --h-size: 442px;
+  --w-size: 280px;
+  --h-size: 317px;
   --text-color: var(--white, #ffffff);
   --card-color: radial-gradient(97.9% 241.31% at 0% 3.7%, #002fa8 0%, #001a68 100%);
   --card-image: url("../../images/card-bg/skills-bg.svg");
@@ -36,11 +36,11 @@
 }
 
 .card--teachers {
-  --w-size: 332px;
-  --h-size: 403px;
+  --w-size: 250px;
+  --h-size: 303px;
   --card-color: var(--accent, #d1e231);
   --card-image: image-set("../images/card-bg/teacher-bg-small@1x.webp" 1x, "../images/card-bg/teacher-bg-small@2x.webp" 2x, "../images/card-bg/teacher-bg-small@1x.png" 1x, "../images/card-bg/teacher-bg-small@2x.png" 2x);
-  background-position: right -25px bottom -22px;
+  background-position: right 0 bottom -22px;
 
   &:has(.card__question) {
     --bg-color: rgba(0, 39, 178, 0.06);
@@ -58,11 +58,11 @@
 }
 
 .card--knowledge {
-  --w-size: 459px;
-  --h-size: 596px;
+  --w-size: 438px;
+  --h-size: 438px;
   --card-color: var(--light-accent, #afdafc);
   --card-image: url("../../images/card-bg/knowledge-bg.svg");
-  background-position: right -112px bottom -136px, 0 0;
+  background-position: right -124px bottom -108px, 0 0;
 
   &:has(.card__question) {
     --bg-color: rgba(0, 39, 178, 0.06);
@@ -80,7 +80,7 @@
 
 .card__question {
   --font-weight: 600;
-  --p-font-size: 14px;
+  --p-font-size: 12px;
   --p-line-height: 130%;
 
   font-family: var(--ff-additional, "Arial", sans-serif);
@@ -101,7 +101,7 @@
 
 
 .card__answer {
-  --h-font-size: 30px;
+  --h-font-size: 24px;
   --h-line-height: 1.02;
   margin-block: 12px 15px;
   font-family: var(--ff-basic, "Arial", sans-serif);
@@ -117,9 +117,11 @@
 
 .card__detail {
   margin-block: 15px;
+  font-size: 12px;
 
   @media (min-width: $desktop-width) {
     align-self: end;
     margin-block: 15px 0;
+    font-size: 18px;
   }
 }
