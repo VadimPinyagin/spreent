@@ -3,19 +3,24 @@
   padding-inline-start: 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 451px;
+  gap: 20px;
+  width: 290px;
   padding: 22px;
+  margin: auto;
   border-radius: 32px;
+  background-image: var(--card-color, transparent);
 
   @media (min-width: $desktop-width) {
     width: 573px;
     padding-inline-start: 10px;
+    margin: 0;
+    gap: 0;
   }
 }
 
 .graduates__item {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   grid-row: 1;
 
   @for $i from 1 through 5 {
@@ -35,24 +40,27 @@
   width: 90px;
   aspect-ratio: 1;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px var(--white, #ffffff);
+  box-shadow: 0 0 0 3px var(--white, #ffffff);
 
   @media (min-width: $desktop-width) {
     width: 120px;
+    box-shadow: 0 0 0 5px var(--white, #ffffff);
+
   }
 }
 
 .graduates__item-link {
   display: block;
-  width: 90px;
+  width: 60px;
   aspect-ratio: 1;
   border-radius: 50%;
   background: var(--white, #ffffff) url("../../icons/plus.svg") no-repeat center / 40px;
   border: 2px solid var(--brand, #1f75fe);
-  box-shadow: 0 0 0 5px var(--white, #ffffff);
+  box-shadow: 0 0 0 3px var(--white, #ffffff);
 
   @media (min-width: $desktop-width) {
     width: 120px;
     background-size: 60px;
+    box-shadow: 0 0 0 3px var(--white, #ffffff);
   }
 }

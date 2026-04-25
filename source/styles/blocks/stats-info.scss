@@ -35,7 +35,7 @@
 }
 
 .stats-info__value {
-  --f-size: 90px;
+  --f-size: 58px;
 
   grid-row-start: 1;
   font-size: var(--f-size);
@@ -58,12 +58,16 @@
   --text-margin-top: 10px;
 
   font-family: var(--ff-additional, "Arial", sans-serif);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: var(--letter-spacing);
   margin-block-start: var(--text-margin-top);
 
   .stats-info__item:first-child & {
     --text-margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
