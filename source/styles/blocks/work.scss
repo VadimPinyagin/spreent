@@ -1,7 +1,7 @@
 .work {
   display: grid;
   padding-block: 32px 104px;
-  font-family: var(--ff-loos-wide, "Arial", sans-serif);
+  font-family: var(--ff-basic, "Arial", sans-serif);
   width: 480px;
   margin: auto;
 
@@ -48,7 +48,7 @@
 }
 
 .work__subtitle {
-  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-family: var(--ff-additional, "Arial", sans-serif);
   font-size: 18px;
   line-height: 1.4;
   margin-block: 18px 25px;

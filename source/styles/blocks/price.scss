@@ -1,7 +1,7 @@
 .price {
   width: 450px;
   margin: auto;
-  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-family: var(--ff-additional, "Arial", sans-serif);
   color: var(--gray-blue, #1a153f);
   padding-block: 35px 60px;
 
@@ -11,7 +11,7 @@
 }
 
 .price__title {
-  font: 500 38px var(--ff-loos-wide, "Arial", sans-serif);
+  font: 500 38px var(--ff-basic, "Arial", sans-serif);
   line-height: 0.98;
   letter-spacing: -0.01em;
   margin-block: 0 5px;
@@ -41,7 +41,7 @@
 }
 
 .price__plan {
-  font: 500 30px var(--ff-loos-wide, "Arial", sans-serif);
+  font: 500 30px var(--ff-basic, "Arial", sans-serif);
   line-height: 1.02;
   margin-block: 0 24px;
 
@@ -92,7 +92,7 @@
 .price__offer {
   display: flex;
   justify-content: space-between;
-  font: 500 34px var(--ff-loos-wide, "Arial", sans-serif);
+  font: 500 34px var(--ff-basic, "Arial", sans-serif);
   line-height: 1.02;
   box-shadow: inset 0 1px 0 0 var(--shadow, #0d1627);
   padding-block-start: 32px;
@@ -151,7 +151,7 @@
 }
 
 .price__separator {
-  font-family: var(--ff-manrope, "Arial", sans-serif);
+  font-family: var(--ff-additional, "Arial", sans-serif);
   font-size: 16px;
   margin: 2px 0;
 

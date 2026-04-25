@@ -1,8 +1,8 @@
 .burger {
   --icon: url("../../icons/burger.svg");
 
-  width: 69px;
-  height: 70px;
+  width: 44px;
+  aspect-ratio: 1;
   background: transparent var(--icon) no-repeat center / 34px 18px;
   border: none;
   cursor: pointer;

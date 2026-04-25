@@ -15,14 +15,12 @@
   </head>
   <body class="page__body">
     <header class="header">
+      <div class="header__container container">
         <a class="header__logo" href="/">
           <img class="header__logo-image" src="images/logo.svg" width="127" height="28" alt="Онлайн-академия Spreent">
         </a>
         <nav class="nav is-hidden">
           <a class="header__button button" href="#order-form">Начать</a>
-          <button class="nav__toggle burger" type="button">
-            <span class="visually-hidden">Открыть/закрыть меню</span>
-          </button>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">Об&nbsp;академии</a>
@@ -35,6 +33,10 @@
             </li>
           </ul>
         </nav>
+        <button class="nav__toggle burger" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -44,7 +46,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" width="329" height="200" srcset="images/artur/artur-large-photo@1x.webp 1x, images/artur/artur-large-photo@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/artur/artur-large-photo@1x.jpg 1x, images/artur/artur-large-photo@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 480px)" width="221" height="135" srcset="images/artur/artur-small-photo@1x.webp 1x, images/artur/artur-small-photo@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" width="221" height="135" srcset="images/artur/artur-small-photo@1x.webp 1x, images/artur/artur-small-photo@2x.webp 2x">
               <img class="hero__lead-photo" src="images/artur/artur-large-photo@1x.jpg" srcset="images/artur/artur-small-photo@2x.jpg 2x" width="221" height="135" fetchpriority="high" alt="Фото молодого человека по имени Артур с темными короткими волосами, который слегка улыбается и смотрит в камеру, приложив руку к затылку.">
             </picture>
             <p class="hero__lead-name">Артур</p>
@@ -61,7 +63,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" width="175" height="256" srcset="images/sergey/sergey-large-photo@1x.webp 1x, images/sergey/sergey-large-photo@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="175" height="256" srcset="images/sergey/sergey-large-photo@1x.jpg 1x, images/sergey/sergey-large-photo@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 480px)" width="117" height="171" srcset="images/sergey/sergey-small-photo@1x.webp 1x, images/sergey/sergey-small-photo@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" width="117" height="171" srcset="images/sergey/sergey-small-photo@1x.webp 1x, images/sergey/sergey-small-photo@2x.webp 2x">
               <img class="hero__lead-photo" src="images/sergey/sergey-small-photo@1x.jpg" srcset="images/sergey/sergey-small-photo@2x.jpg 2x" width="117" height="171" fetchpriority="high" alt="Черно-белый портрет Сергея в худи и бейсболке на фоне водоема.">
             </picture>
             <p class="hero__lead-name">Сергей</p>
@@ -70,7 +72,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" width="329" height="200" srcset="images/michael/michael-large-photo@1x.webp 1x, images/michael/michael-large-photo@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="329" height="200" srcset="images/michael/michael-large-photo@1x.jpg 1x, images/michael/michael-large-photo@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 480px)" width="221" height="135" srcset="images/michael/michael-small-photo@1x.webp 1x, images/michael/michael-small-photo@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" width="221" height="135" srcset="images/michael/michael-small-photo@1x.webp 1x, images/michael/michael-small-photo@2x.webp 2x">
               <img class="hero__lead-photo" src="images/michael/michael-small-photo@1x.jpg" srcset="images/michael/michael-small-photo@2x.jpg 2x" width="221" height="135" fetchpriority="high" alt="Фото Михаила на открытом воздухе на фоне кустов и деревьев в парке.">
             </picture>
             <p class="hero__lead-name">Миша</p>
@@ -104,25 +106,25 @@
           <ul class="community__list graduates">
             <li class="graduates__item" aria-hidden="true">
               <picture>
-                <source type="image/webp" media="(min-width: 480px)" width="120" height="120" srcset="images/graduates/graduate-one@1x.webp 1x, images/graduates/graduate-one@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" width="120" height="120" srcset="images/graduates/graduate-one@1x.webp 1x, images/graduates/graduate-one@2x.webp 2x">
                 <img class="graduates__item-photo" src="images/graduates/graduate-one@1x.jpg" srcset="images/graduates/graduate-one@2x.jpg 2x" width="120" height="120" alt="Молодая улыбающаяся девушка в очках, сером худи и синей джинсовой куртке на фоне синей металлической стены.">
               </picture>
             </li>
             <li class="graduates__item" aria-hidden="true">
               <picture>
-                <source type="image/webp" media="(min-width: 480px)" width="120" height="120" srcset="images/graduates/graduate-two@1x.webp 1x, images/graduates/graduate-two@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" width="120" height="120" srcset="images/graduates/graduate-two@1x.webp 1x, images/graduates/graduate-two@2x.webp 2x">
                 <img class="graduates__item-photo" src="images/graduates/graduate-two@1x.jpg" srcset="images/graduates/graduate-two@2x.jpg 2x" width="120" height="120" alt="Улыбающийся молодой человек с кудрявыми волосами в черной шляпе.">
               </picture>
             </li>
             <li class="graduates__item" aria-hidden="true">
               <picture>
-                <source type="image/webp" media="(min-width: 480px)" width="120" height="120" srcset="images/graduates/graduate-three@1x.webp 1x, images/graduates/graduate-three@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" width="120" height="120" srcset="images/graduates/graduate-three@1x.webp 1x, images/graduates/graduate-three@2x.webp 2x">
                 <img class="graduates__item-photo" src="images/graduates/graduate-three@1x.jpg" srcset="images/graduates/graduate-three@2x.jpg 2x" width="120" height="120" alt="Молодой человек в кепке и коричневой вельветовой куртке на сером фоне.">
               </picture>
             </li>
             <li class="graduates__item" aria-hidden="true">
               <picture>
-                <source type="image/webp" media="(min-width: 480px)" width="120" height="120" srcset="images/graduates/graduate-four@1x.webp 1x, images/graduates/graduate-four@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" width="120" height="120" srcset="images/graduates/graduate-four@1x.webp 1x, images/graduates/graduate-four@2x.webp 2x">
                 <img class="graduates__item-photo" src="images/graduates/graduate-four@1x.jpg" srcset="images/graduates/graduate-four@2x.jpg 2x" width="120" height="120" alt="Улыбающаяся девушка со светлыми волосами, держащая оранжевую папку.">
               </picture>
             </li>
@@ -197,7 +199,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" width="660" height="440" srcset="images/certificate/certificate-large@1x.webp 1x, images/certificate/certificate-large@2x.webp 2x">
               <source type="image/jpeg" media="(min-width: 1440px)" width="660" height="440" srcset="images/certificate/certificate-large@1x.png 1x, images/certificate/certificate-large@2x.png 2x">
-              <source type="image/webp" media="(min-width: 480px)" width="448" height="300" srcset="images/certificate/certificate-small@1x.webp 1x, images/certificate/certificate-small@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" width="448" height="300" srcset="images/certificate/certificate-small@1x.webp 1x, images/certificate/certificate-small@2x.webp 2x">
               <img class="upgrade__certificate-image" src="images/certificate/certificate-small@1x.png" srcset="images/certificate/certificate-small@2x.png 2x" width="448" height="300" alt="Образец сертификата академии Spreent">
             </picture>
           </div>
