@@ -45,8 +45,8 @@
   text-decoration: none;
   display: inline-block;
   color: var(--gray-blue, #0d1627);
-  font-family: "Loos Wide", "Arial", sans-serif;
-  font-size: 30px;
+  font-family: var(--ff-basic, "Arial", sans-serif);
+  font-size: 21px;
   line-height: 1.02;
 
   @media (min-width: $desktop-width) {
