@@ -4,11 +4,10 @@
   margin: auto;
   margin-block-start: 20px;
   box-shadow: inset 0 1px 0 0 var(--shadow, #0d1627);
-  padding-block: 18px 117px;
+  padding-block: 18px 79px;
 
   @media (min-width: $desktop-width) {
     width: 1360px;
-    padding-block-end: 79px;
     margin-block-start: 81px;
   }
 }
