@@ -7,8 +7,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
     margin-block-start: 55px;
     padding-block-end: 57px;
   }
@@ -27,8 +25,6 @@
     background-color: var(--white, #ffffff);
     grid-column: 1;
     grid-row: 1;
-    margin-block-start: -1px;
-    margin-inline-start: -1px;
   }
 }
 
@@ -90,7 +86,7 @@
     width: 1440px;
     margin-block-start: 0;
     grid-template-columns: repeat(6, 240px);
-    grid-auto-rows: 240px;
+    grid-template-rows: repeat(3, 240px);
     gap: 1px;
     background-color: var(--light-border, #e0e0e0);
     border: 1px solid var(--light-border, #e0e0e0);
