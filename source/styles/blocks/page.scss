@@ -23,7 +23,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: color-mix(in srgb, var(--white), transparent 30%);
+    background: color-mix(in sRGB, var(--white, #ffffff), transparent 30%);
     backdrop-filter: blur(70px);
   }
 }
