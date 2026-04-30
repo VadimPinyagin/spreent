@@ -1,8 +1,10 @@
-const nav = document.querySelector('.nav');
-const btnBurger = document.querySelector('.burger');
+const body = document.querySelector('.page__body');
+const nav = body.querySelector('.nav');
+const btnBurger = nav.querySelector('.burger');
 const headerButton = nav.querySelector('.header__button');
 const hiddenClass = 'is-hidden';
 const btnCloseClass = 'burger--cross';
+const bodyLockClass = 'page__body--lock';
 
 const closeNav = () => {
   nav.classList.add(hiddenClass);
@@ -10,17 +12,23 @@ const closeNav = () => {
 
   document.removeEventListener('keydown', onEscKeydown);
   document.removeEventListener('click', onOutsideMenuClick);
+  body.classList.remove(bodyLockClass);
 };
 
 const toggleNav = () => {
-  btnBurger.addEventListener('click', () => {
-    if (nav.classList.contains(hiddenClass)) {
-      nav.classList.remove(hiddenClass);
-      btnBurger.classList.add(btnCloseClass);
-      document.addEventListener('keydown', onEscKeydown);
-      document.addEventListener('click', onOutsideMenuClick);
-    } else {
-      closeNav();
+  nav.addEventListener('click', (e) => {
+    const target = e.target;
+    if (btnBurger.contains(target)) {
+
+      if (nav.classList.contains(hiddenClass)) {
+        nav.classList.remove(hiddenClass);
+        btnBurger.classList.add(btnCloseClass);
+        body.classList.add(bodyLockClass);
+        document.addEventListener('keydown', onEscKeydown);
+        document.addEventListener('click', onOutsideMenuClick);
+      } else{
+        closeNav();
+      }
     }
   });
 };
@@ -33,7 +41,7 @@ function onEscKeydown(e) {
 
 
 function onOutsideMenuClick(e) {
-  if ((!nav.contains(e.target) && !btnBurger.contains(e.target)) || headerButton.contains(e.target)) {
+  if ((!nav.contains(e.target)) || headerButton.contains(e.target)) {
     closeNav();
   }
 }

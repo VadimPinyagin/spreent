@@ -14,3 +14,16 @@
   margin: 0;
   background-color: var(--white, #ffffff);
 }
+
+.page__body--lock {
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: color-mix(in sRGB, var(--white, #ffffff), transparent 30%);
+    backdrop-filter: blur(70px);
+  }
+}
