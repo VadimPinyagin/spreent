@@ -1,8 +1,10 @@
-const nav = document.querySelector('.nav');
+const body = document.querySelector('.page__body');
+const nav = body.querySelector('.nav');
 const btnBurger = nav.querySelector('.burger');
 const headerButton = nav.querySelector('.header__button');
 const hiddenClass = 'is-hidden';
 const btnCloseClass = 'burger--cross';
+const bodyLockClass = 'page__body--lock';
 
 const closeNav = () => {
   nav.classList.add(hiddenClass);
@@ -10,6 +12,7 @@ const closeNav = () => {
 
   document.removeEventListener('keydown', onEscKeydown);
   document.removeEventListener('click', onOutsideMenuClick);
+  body.classList.remove(bodyLockClass);
 };
 
 const toggleNav = () => {
@@ -20,6 +23,7 @@ const toggleNav = () => {
       if (nav.classList.contains(hiddenClass)) {
         nav.classList.remove(hiddenClass);
         btnBurger.classList.add(btnCloseClass);
+        body.classList.add(bodyLockClass);
         document.addEventListener('keydown', onEscKeydown);
         document.addEventListener('click', onOutsideMenuClick);
       } else{
