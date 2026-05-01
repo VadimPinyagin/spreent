@@ -1,21 +1,32 @@
 .burger {
   --icon: url("../../icons/burger.svg");
-
-  width: 69px;
-  height: 70px;
-  background: transparent var(--icon) no-repeat center / 34px 18px;
+  position: relative;
+  width: 70px;
+  aspect-ratio: 1;
   border: none;
   cursor: pointer;
+  box-shadow: inset 1px 0 0 0 var(--shadow, #0d1627);
+  background-color: transparent;
 
-  &:hover {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 44px;
+    aspect-ratio: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask: var(--icon) no-repeat center / 34px 18px;
+    background-color: currentColor;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
     opacity: 0.5;
   }
 
-  &:focus-visible {
-    opacity: 0.5;
-  }
-
-  &:active {
+  &:active::before {
     opacity: 1;
   }
 
