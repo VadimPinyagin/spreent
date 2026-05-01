@@ -1,8 +1,8 @@
 .header {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   align-items: center;
-  justify-content: space-between;
   box-shadow: inset 0 -1px 0 0 var(--shadow, #0d1627);
   z-index: 1;
 
@@ -20,16 +20,21 @@
 
   @media (min-width: $desktop-width) {
     padding: 13px 40px;
+    gap: 100px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .header__logo {
   margin-block-start: 10px;
-  margin-inline: 15px;
+  margin-inline: 15px auto;
   flex-shrink: 0;
 
   @media (min-width: $desktop-width) {
-    margin-inline: 0;
+    margin-inline: 0 auto;
   }
 
   &:hover {
@@ -50,5 +55,6 @@
 
   @media (min-width: $desktop-width) {
     margin-inline: 0;
+    order: 1;
   }
 }

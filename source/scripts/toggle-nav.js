@@ -1,7 +1,7 @@
 const body = document.querySelector('.page__body');
 const nav = body.querySelector('.nav');
 const btnBurger = nav.querySelector('.burger');
-const headerButton = nav.querySelector('.header__button');
+const navLinkSelector = 'nav__link';
 const hiddenClass = 'is-hidden';
 const btnCloseClass = 'burger--cross';
 const bodyLockClass = 'page__body--lock';
@@ -16,6 +16,7 @@ const closeNav = () => {
 };
 
 const toggleNav = () => {
+
   nav.addEventListener('click', (e) => {
     const target = e.target;
     if (btnBurger.contains(target)) {
@@ -30,6 +31,10 @@ const toggleNav = () => {
         closeNav();
       }
     }
+
+    if (e.target.classList.contains(navLinkSelector)) {
+      closeNav();
+    }
   });
 };
 
@@ -40,7 +45,7 @@ function onEscKeydown(e) {
 }
 
 function onOutsideMenuClick(e) {
-  if (!nav.contains(e.target) || headerButton.contains(e.target)) {
+  if (!nav.contains(e.target)) {
     closeNav();
   }
 }
