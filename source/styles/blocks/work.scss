@@ -120,47 +120,47 @@
     grid-row: var(--r);
     grid-column: var(--c);
 
-    &:has(.work__logo[src*="sber"]) {
+    &:has([src*="sber"]) {
       --r: 1;
       --c: 6;
     }
 
-    &:has(.work__logo[src*="mts"]) {
+    &:has([src*="mts"]) {
       --r: 1;
       --c: 5;
     }
 
-    &:has(.work__logo[src*="vtb"]) {
+    &:has([src*="vtb"]) {
       --r: 1;
       --c: 4;
     }
 
-    &:has(.work__logo[src*="rustore"]) {
+    &:has([src*="rustore"]) {
       --r: 2;
       --c: 6;
     }
 
-    &:has(.work__logo[src*="sportmaster"]) {
+    &:has([src*="sportmaster"]) {
       --r: 2;
       --c: 5;
     }
 
-    &:has(.work__logo[src*="mish"]) {
+    &:has([src*="mish"]) {
       --r: 3;
       --c: 1;
     }
 
-    &:has(.work__logo[src*="chulakov"]) {
+    &:has([src*="chulakov"]) {
       --r: 3;
       --c: 2;
     }
 
-    &:has(.work__logo[src*="vc"]) {
+    &:has([src*="vc"]) {
       --r: 3;
       --c: 3;
     }
 
-    &:has(.work__logo[src*="epam"]) {
+    &:has([src*="epam"]) {
       --r: 3;
       --c: 4;
     }
